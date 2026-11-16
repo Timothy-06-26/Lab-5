@@ -11,13 +11,22 @@
     <h1> Mombasa Beach</h1>
     <p> A scroll on the beach with beautiful ocean sounds. </p>
  
-    <button class="picture_border" id="beach_pic" type="button" aria-label="Click or press to create a ripple effect.">
+    <button class="picture_border" id="beach_pic" type="button">
         <span class="photo-view">
 
             <img id="beach_photo" src="images/diani.jpg" alt="beach">
         </span>
         <span class ="dusk_overlay" aria-hidden="true"></span>
     </button>
+    <p class="small">Move along the scene, You can also click it to cause a ripple effect.</p>
+
+//HTML 5 audio for play, pause, volume and controls.
+<audio id="beachtrack" controls preload="metadata>
+    <source src = "mombasa_sound.mp3" type = "audio/mpeg">
+ Maybe try another browser if it doesn't work.
+ </audio>
+ 
+ <p class="small" id="playback_status" role="status"> Press play to start the gentle photo animation.</p>
 
 
 
