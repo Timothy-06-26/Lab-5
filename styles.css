@@ -54,6 +54,19 @@ cursor: crosshair;
     animation-play-state: paused; 
 }
 
-playing.motioni #beach_photo {
+.playing.motioni #beach_photo {
     animation-play-state: running;
 }
+
+audio { 
+    display: block;
+    width: min(440px, 100%);
+    margin: 26px auto 12px;
+
+}
+
+.small {
+    color: #4e6665;
+    font-size: 12px;
+}
+
