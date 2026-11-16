@@ -21,8 +21,8 @@ h1{
     margin: 18px 0 10px;
 }
 
-.picture_border
-{position: relative;
+.picture_border{
+position: relative;
 display: grid;
 place-items: center;
 width: 100%;
@@ -35,4 +35,25 @@ color: inherit;
 font: inherit;
 padding: 0;
 cursor: crosshair;
+}
+
+.photo-view{
+    position: absolute;
+    inset: 0;
+    transform: translate(var(--x), var(--y)); 
+    transition: transform .25s ease-out;
+}
+
+#beach_photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.04);
+    filter: brightness(var(--brightness));
+    animation: drift 14s ease in out infinite alternate;
+    animation-play-state: paused; 
+}
+
+playing.motioni #beach_photo {
+    animation-play-state: running;
 }
