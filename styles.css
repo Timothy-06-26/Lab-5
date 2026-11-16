@@ -11,6 +11,21 @@ body{margin: 0;
 }
 
 .label {
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+h1{
+    font-family: Cambria, serif;
+    font-size: 14px;
+}
+
+
+
+
+
+{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40%
+    font-size: 40%;
+    margin: 18px 0 10px;
 }
