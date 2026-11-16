@@ -18,14 +18,21 @@ body{margin: 0;
 h1{
     font-family: Cambria, serif;
     font-size: 14px;
+    margin: 18px 0 10px;
 }
 
-
-
-
-
-{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40%;
-    margin: 18px 0 10px;
+.picture_border
+{position: relative;
+display: grid;
+place-items: center;
+width: 100%;
+overflow: hidden;
+border: 0;
+border-radius: 8px;
+margin-top: 28px;
+background-color: #d2e8e3;
+color: inherit;
+font: inherit;
+padding: 0;
+cursor: crosshair;
 }
