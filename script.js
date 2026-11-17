@@ -3,7 +3,7 @@ const photo = document.querySelector('#beach_photo');
 const playbackStatus = document.querySelector('#playback_status')
 const scene = document.querySelector('#beach_pic');
 const reducedMotion = matchMedia(
-    '(prefers-reduced-motion: reduce'
+    '(prefers-reduced-motion: reduce)'
 );
 
 //Play or pause will also play or pause the photo animation.
