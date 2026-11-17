@@ -80,3 +80,7 @@ audio {
     font-size: 12px;
 }
 
+@keyframes drift { from { transform: scale(1.04); } to { transform: scale(1.1); } }
+@keyframes ripple { from { transform: translate(-50%, -50%); opacity: 1;} to { transform: translate(-50%, -50%) scale(16); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {#beach_photo, .ripple { animation: none; } .photo-view { transition: none; } }
+    
