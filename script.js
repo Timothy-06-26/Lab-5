@@ -34,7 +34,7 @@ scene.addEventListener('click', event => {
     const ripple = document.createElement('span');
     ripple.className = 'ripple';
     ripple.setAttribute('aria-hidden', 'true');
-    ripple.style.left = `${event.detail ? event.clientX - bounds.left : bounds.width / 2} px`;
+    ripple.style.left = `${event.detail ? event.clientX - bounds.left : bounds.width / 2}px`;
     ripple.style.top = `${event.detail ? event.clientY - bounds.top : bounds.height / 2}px`;
     if (scene.querySelectorAll('.ripple').length >= 8) scene.querySelector('.ripple').remove();
     scene.append(ripple);
