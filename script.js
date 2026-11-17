@@ -1,7 +1,7 @@
 const audio = document.querySelector('#beachtrack');
 const photo = document.querySelector('#beach_photo');
 const playbackStatus = document.querySelector('#playback_status')
-const scene = document.querySelector('#beach_pic')
+const scene = document.querySelector('#beach_pic');
 const reducedMotion = matchMedia(
     '(prefers-reduced-motion: reduce'
 );
