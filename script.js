@@ -4,7 +4,7 @@ const playbackStatus = document.querySelector('#playback_status')
 const scene = document.querySelector('#beach_pic')
 const reducedMotion = matchMedia(
     '(prefers-reduced-motion: reduce'
-);=
+);
 
 //Play or pause will also play or pause the photo animation.
 
@@ -26,21 +26,6 @@ function motionEnabled() {
     return !reducedMotion.matches;
 }
 
-
-//Pointer used to create a parallax effect
-scene.addEventListener('pointermove', event => {
-    if (!motionEnabled () || event.pointerType === 'touch') return;
-    const bounds = scene.getBoundingClientRect();
-    scene.style.setProperty('--x', `${((event.clientX - bounds.left) / bounds.width - .5) * 12}px`);
-    scene.style.setProperty('--y', `${((event.clientY - bounds.top) / bounds.height - .5) * 8} px`);   
-    });
-
-    function centreView(){
-        scene.style.setProperty ('--x', '0px');
-         scene.style.setProperty ('--y', '0px');
-    }
-    scene.addEventListener('pointerleave', centreView);
-    scene.addEventListener('blur', centreView);
 
     // Click for expanding ring
 scene.addEventListener('click', event => {
