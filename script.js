@@ -20,7 +20,7 @@ playbackStatus.textContent = 'Finished . Press play to walk through the beach on
 });
 
 function motionEnabled() {
-    return 
+    return !reducedMotion.matches;
 }
 
 
@@ -28,5 +28,7 @@ function motionEnabled() {
 scene.addEventListener('pointermove', event => {
     if (motionEnabled () || event.pointerType === 'touch') return;
     const bounds = scene.getBoundingClientRect();
-    scene.style.setProperty
+    scene.style.setProperty('--x', `${((event.clientX - bounds.left) / bounds.width - .5) * 12}px`)
+    scene.style.setProperty('--y', `${((event.clientY - bounds.top) / bounds.height - .5) * 8} px `);   
+    }
 }
